@@ -1,0 +1,19 @@
+# rocketDetails.graphql
+query GetRocketDetails($rocketId: String!) {
+	rocket(id: $rocketId) {
+		id
+		name
+		description
+		first_flight
+		height {
+			meters
+		}
+		diameter {
+			meters
+		}
+		mass {
+			kg
+		}
+		stages
+	}
+}
